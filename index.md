@@ -1,13 +1,12 @@
 ---
-title: Jekyll Serif Theme
+title: Loar Law
 layout: home
-description: Jekyll Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+description: Attorney Matthew Edward Loar, licensed in Illinois
 intro_image: "images/illustrations/pointing.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 show_call_box: true
 ---
 
-# Serif - A Jekyll Business Theme.
+# Attorney Matt Loar
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
