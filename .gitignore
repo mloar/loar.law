@@ -3,6 +3,7 @@ node_modules
 npm-debug.log
 
 # Jekyll
+.bundle/
 _site
 _site/
 .sass-cache/
@@ -10,6 +11,7 @@ _site/
 .jekyll-metadata
 Gemfile.lock
 **/Gemfile.lock
+vendor/
 
 # Temporary files
 tmp
