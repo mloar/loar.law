@@ -7,5 +7,23 @@
       "width": 80,
       "height": 80
     }
+  },
+  {
+    "title": "Fixed Fees",
+    "description": "Know what you'll pay.",
+    "image": {
+      "url": "images/features/noun_The Process_1885341.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Personal Service",
+    "description": "I want you to be 100% satisfied with my services.",
+    "image": {
+      "url": "images/features/noun_3d modeling_1885342.svg",
+      "width": 80,
+      "height": 80
+    }
   }
 ]
