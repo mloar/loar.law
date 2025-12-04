@@ -1,7 +1,10 @@
 main:
+  - name: "Client Portal"
+    url: "https://loar.fidulegal.com/users/sign_in"
+    weight: 2
   - name: "About"
     url: "/about/"
-    weight: 2
+    weight: 3
 
 footer:
   - name: "Home"
