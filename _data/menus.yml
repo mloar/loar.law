@@ -1,6 +1,9 @@
 main:
   - name: "Client Portal"
     url: "https://loar.fidulegal.com/users/sign_in"
+    weight: 1
+  - name: "News"
+    url: "/news/"
     weight: 2
   - name: "About"
     url: "/about/"
