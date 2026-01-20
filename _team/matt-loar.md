@@ -1,7 +1,7 @@
 ---
 title: "Matt Loar"
 date: 2025-11-06 19:08:45-06:00
-image: "images/team/LoarMatthew_1018_CBRE_0242 cropped square.jpg"
+image: "images/team/MattLoarHeadshots-2-cropped.jpg"
 jobtitle: "Owner"
 linkedinurl: "https://www.linkedin.com/in/mloar"
 promoted: true

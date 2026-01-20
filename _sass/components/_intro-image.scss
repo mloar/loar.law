@@ -12,19 +12,14 @@
   }
   @include media-breakpoint-up(md) {
     position: absolute;
-    //bottom: -50px;
-    left: -50px;
-    width: 700px;
+    object-view-box: xywh(800px 0px 50% 2300px);
   }
   @include media-breakpoint-up(lg) {
-    //bottom: -60px;
-    left: -60px;
-    width: 800px;
+    position: absolute;
+    object-view-box: xywh(0px 0px 100% 2300px);
   }
   @include media-breakpoint-up(xl) {
-    //bottom: -100px;
-    left: -70px;
-    width: 850px;
+    object-view-box: xywh(0px 0px 100% 2300px);
   }
 }
 .intro-image-hide-mobile {
