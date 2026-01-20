@@ -1,10 +1,5 @@
 [
   {
-      "name": "Email",
-      "link": "mailto:matt@loar.law",
-      "image": "images/social/email.svg"
-  },
-  {
     "name": "Signal",
     "link": "https://signal.me/#eu/B19ogjK1ReqNnet150oQTfP_h4YzWKJ-wgJ-rcZ6g8ibFdEoEn1N6LQVDp8Uvl-W",
     "image": "images/social/signal.svg"
