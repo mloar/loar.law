@@ -11,7 +11,7 @@ weight: 1
 Matt brings seven years of professional software engineering experience
 to the practice of law.
 
-Graduating with a degree in Computer Science from the Grainger College of Engineering at the
+![Matt's old Microsoft employee badge](/images/team/MattLoarBadge.jpg#right) Graduating with a degree in Computer Science from the Grainger College of Engineering at the
 University of Illinois at Urbana-Champaign, Matt joined Microsoft as a developer in the Windows
 division working on XML Paper Specification (XPS) APIs, and was a co-inventor on the Load-Time
 Memory Optimization patent

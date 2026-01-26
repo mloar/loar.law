@@ -6,7 +6,7 @@ main:
     url: "/news/"
     weight: 2
   - name: "About"
-    url: "/about/"
+    url: "/team/matt-loar/"
     weight: 3
 
 footer:

@@ -8,6 +8,11 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  img[src*="#right"] {
+    max-width: 30%;
+    float: right;
+    margin-left: 20px;
+  }
   strong {
     font-width: bold;
   }
