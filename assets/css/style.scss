@@ -1,6 +1,8 @@
 ---
 ---
 
+@import "fonts.css";
+
 // Colors
 $primary: #e5261f;
 $primary-dark: #a01b16;
@@ -17,8 +19,8 @@ $link-hover-color: lighten($primary, 10%);
 $link-hover-decoration: underline;
 
 // Fonts
-$font-family-base: Helvetica, Arial, sans-serif, -apple-system;
-$font-family-heading: "Playfair Display", serif, -apple-system;
+$font-family-base: "Questa", serif, -apple-system;
+$font-family-heading: "Libre Bodoni", serif, -apple-system;
 
 // Footer
 $footer-background-color: $primary;
