@@ -1,6 +1,6 @@
 main:
   - name: "Client Portal"
-    url: "https://loar.fidulegal.com/users/sign_in"
+    url: "https://communicate.smokeball.com"
     weight: 1
   - name: "News"
     url: "/news/"
