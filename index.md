@@ -1,7 +1,7 @@
 ---
 title: Loar Law
 layout: home
-description: Attorney Matthew Edward Loar, licensed in Illinois
+description: Chicago law firm handling business, technology, and intellectual property
 intro_image: "images/team/MattLoarHeadshots-1.jpg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
