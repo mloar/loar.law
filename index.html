@@ -4,15 +4,11 @@ call_to_action: Contact
 background_image_path:
 large_header: true
 testimonials:
-  - message: We use Justice Law in all our endeavours. They offer an unparalleled service when it comes to running a business.
-    image: "https://placekitten.com/g/60/60?a=.png"
-    name: Joice Carmold
-  - message: Justice Law are the best of the best. Being local, they care about people and have strong ties to the community.
-    image: "https://www.fillmurray.com/60/60?a=.png"
-    name: Peter Rottenburg
-  - message: Justice Law were everything we could have hoped for when buying our first home. Highly recommended to all.
-    image: "https://placebear.com/60/60?a=.png"
-    name: D. and G. Gibbleston
+  - message: Matt was so quick and efficient in solving my issue. With his help, the infringement of my IP was resolved within 96 hours. I would definitely hire him again.
+    name: Tiffany
+    image: bob.png
+  - message: He is very prompt. If he doesn’t immediately know what you need he will research for you to make sure you’re good. I did research too, but I wanted a second opinion since international laws are scary.
+    name: Auriel
 _options:
   image:
     width: 60
@@ -20,16 +16,14 @@ _options:
 ---
 
 <div class="editable">
-	<p>This is the <strong>Justice</strong> template from <a href="https://cloudcannon.com/">CloudCannon</a>. Justice is strong foundation for the web presence of a law firm or business. It's filled with fictitious example content to get you started.</p>
-
-	<p>Justice Law is professional representation. Practicing for over 50 years, our team have the knowledge and skills to get you results.</p>
+  <p>Matt Loar brings seven years of professional software engineering experience to the practice of law. Schedule a consulation today.</p>
 </div>
 
 <div class="testimonials">
 	{% for testimonial in page.testimonials %}
 		<blockquote class="testimonial">
 			<p class="testimonial-message">{{ testimonial.message }}</p>
-			<p class="testimonial-author"><img src="{% include relative-src.html src=testimonial.image %}" alt="Photo of {{ testimonial.name }}"> {{ testimonial.name }}</p>
+      <p class="testimonial-author"><svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><g transform="scale(0.0375)"><path d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></g></svg> {{ testimonial.name }}</p>
 		</blockquote>
 	{% endfor %}
 </div>

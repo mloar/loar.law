@@ -1,29 +1,30 @@
 # ----
 # Site
 
-title: Justice Template
-url: "https://orchid-heron.cloudvent.net"
+title: Loar Law
+url: "https://loar.law"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: Jekyll template with example content for a law firm.
+logo: /images/favicon-32x32.svg
+description: The technology law firm
 author:
   name:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Justice Template
+  name: Loar Law
   links:
-    - https://github.com/CloudCannon/justice-jekyll-template
+    - https://bsky.app/profile/matt.loar.name
+    - https://www.linkedin.com/company/loar-law
 
 # -----
 # Build
 
-timezone: Etc/UTC
+timezone: America/Chicago
 
 paginate: 10
 paginate_path: "/blog/:num/"
@@ -90,6 +91,7 @@ _select_data:
     - Map
 
   social_icons:
+    - Bluesky
     - Facebook
     - Instagram
     - LinkedIn

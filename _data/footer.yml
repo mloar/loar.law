@@ -12,19 +12,11 @@
       link: /blog/
 - title: Social
   links:
-    - name: Facebook
-      link: http://facebook.com/cloudcannon/
-      social_icon: Facebook
-      new_window: true
-    - name: Twitter
-      link: http://twitter.com/cloudcannon
-      social_icon: Twitter
-      new_window: true
-    - name: Instagram
-      link: http://instagram.com/
-      social_icon: Instagram
+    - name: Bluesky
+      link: https://bsky.app/profile/matt.loar.name
+      social_icon: Bluesky
       new_window: true
     - name: LinkedIn
-      link: https://nz.linkedin.com/company/cloud-cannon/
+      link: https://www.linkedin.com/company/loar-law
       social_icon: LinkedIn
       new_window: true
