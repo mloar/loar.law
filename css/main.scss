@@ -23,3 +23,7 @@ $mobile-break: 700px;
   height: 100%;
   border: none;
 }
+
+header {
+  filter: grayscale(80%);
+}
