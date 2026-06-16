@@ -24,6 +24,8 @@
   </head>
 
   <body>
+    {% include cookie-consent-js.html %}
+    {% include gtag.html %}
     <header style="background-image: url('{% include relative-src.html src=page.background_image_path %}');" {% if page.large_header %}class="main-hero"{% endif %}>
       <div class="container">
         <h1><a href="{{ site.baseurl }}/">{{ site.data.company.title }}</a></h1>
@@ -104,9 +106,17 @@
           &copy; {{ site.time | date: '%Y' }} {{ site.data.company.title }} &bull;
           <a href="{{ site.baseurl }}/privacy/">Privacy</a>
           &bull;
-          <a href="#" onClick="javascript: (window._hsp || []).push(['showBanner'])">Cookie Settings</a>
+          <a href="#" id="cookie-settings">Cookie Settings</a>
+          <script>
+            document.getElementById('cookie-settings').addEventListener('click', e => {
+              eraseCookie('cookie-consent');
+              document.getElementById('cookie-notice').style.display = 'inline-block';
+              e.preventDefault();
+            });
+          </script>
         </p>
       </div>
     </footer>
+    {% include cookie-consent.html %}
   </body>
 </html>
