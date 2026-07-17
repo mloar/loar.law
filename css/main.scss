@@ -3,14 +3,12 @@ layout: null
 sitemap: false
 ---
 
-@import "fonts.css";
+@use "fonts.css";
 
-$mobile-break: 700px;
-
-@import "typography";
-@import "layout";
-@import "forms";
-@import "cloudcannon";
+@use "typography";
+@use "layout";
+@use "forms";
+@use "cloudcannon";
 
 .inset-image {
   float: left;
