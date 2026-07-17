@@ -1,0 +1,9 @@
+
+          <a href="#" id="cookie-settings">Cookie Settings</a>
+          <script>
+            document.getElementById('cookie-settings').addEventListener('click', e => {
+              eraseCookie('cookie-consent');
+              document.getElementById('cookie-notice').style.display = 'inline-block';
+              e.preventDefault();
+            });
+          </script>
