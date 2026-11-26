@@ -5,7 +5,14 @@ dist/
 .astro/
 
 # dependencies
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 node_modules/
+.pnp.*
 
 # logs
 npm-debug.log*

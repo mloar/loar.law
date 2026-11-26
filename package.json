@@ -14,4 +14,5 @@
   "dependencies": {
     "astro": "^7.4.13"
   }
+  "packageManager": "yarn@4.19.0"
 }
