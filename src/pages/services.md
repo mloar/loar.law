@@ -1,0 +1,39 @@
+---
+layout: ../layouts/Layout.astro
+title: Services
+call_to_action: Contact
+background_image_path:
+large_header: false
+show_in_navigation: true
+navigation_order: 2
+---
+
+Loar Law is a full-service law firm serving both businesses and consumers. Our services include:
+
+### Data Protection & Privacy
+
+Matt holds CIPP/E, CIPP/US, and CIPT certifications from the International Association of Privacy Professionals (IAPP) and spent seven years as in-house counsel advising on GDPR, HIPAA, and other federal, state, and global privacy and data-protection laws. He can help you with drafting and implementing privacy policies, data subject request processes, and incident response plans.
+
+### Business Formation
+
+Choosing the right entity for your business is very important, but depends on a number of factors. Matt can help you understand the advantages and pitfalls of different types and jurisdictions, file the necessary paperwork with state authorities, and fulfill all the necessary formalities to protect your personal assets from liability.
+
+### Business Transactional
+
+Make sure your contracts don't expose you to excessive liability or impose obligations you cannot meet. Matt can review and revise your contracts and negotiate directly with your customer's or supplier's counsel if necessary.
+
+### Contract Litigation
+
+Matt helps both businesses and consumers facing litigation over a breach of contract.
+
+### Intellectual Property
+
+Guarding your intellectual property is essential to establish your brand and protect your customers from being misled by competitors. Matt Loar is a registered patent attorney and can also advise you on trademark and copyright protection.
+
+### Mechanics Liens
+
+Whether you are a contractor looking to get paid for your last job or a homeowner having a dispute over repairs to your home, Matt can help negotiate and fight in court if necessary.
+
+### Tax
+
+Tax payment and reporting can make or break your business. Matt can advise you on strategies to minimize your tax liability and prepare the necessary returns and filings to keep you compliant.

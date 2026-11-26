@@ -1,23 +1,100 @@
+---
+  import '../styles/global.scss'
+  const {
+  title = 'Loar Law',
+  background_image_path = "/images/MattLoarHeadshots-3-nobg.jpg",
+  large_header = false,
+  nav_pages = [
+  { title: 'Home', url: '/' },
+  { title: 'About', url: '/about' },
+  { title: 'Services', url: '/services' },
+  ],
+  page = {call_to_action: 'Contact'},
+  footer = [
+  { title: 'Pages', links: [
+  { title: 'Home', url: '/' },
+  { title: 'About', url: '/about' },
+  { title: 'Services', url: '/services' },
+  ] },
+  { title: 'Social', links: [
+  { title: 'Bluesky', url: 'https://bsky.app/profile/matt.loar.name' },
+  { title: 'LinkedIn', url: 'https://www.linkedin.com/company/loar-law' },
+  ] },
+  ]
+  } = Astro.props;
+---
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{Astro.props.frontmatter?.title ?? title}</title>
+  </head>
+  <body>
+    <header style={"background-image: url('" + background_image_path + "');"} class={large_header ? 'main-hero' : ''}>
+      <div class="container">
+        <h1><a href="/">Loar Law</a></h1>
+        <nav>
+          <ul>
+               {nav_pages.map(nav_page =>
+               <li><a class={nav_page.url == page.url ? "active" : ''} href={ nav_page.url }>{ nav_page.title }</a></li>
+                      )}
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+    <section class="main">
+      <div class="container">
+        <slot/>
+      </div>
+    </section>
+
+    {page.call_to_action == 'Contact' &&
+      <section class="quote-section">
+        <p class="container editable">
+          <a href="{{ site.baseurl }}/contact/">Contact us</a> today to find out how we can help you. Your first consultation is free.
+        </p>
+      </section>
+             }
+
+    <footer>
+      <div class="container">
+        <div class="footer-columns">
+             {footer.map(column =>
+             <ul class="footer-links">
+               <li>
+                 <h2>{ column.title }</h2>
+               </li>
+                 {column.links.map(link =>
+                 <li>
+                   <a target="_blank" href={link.url}>
+                      { link.title }
+                   </a>
+                 </li>
+                      )}
+             </ul>
+                      )}
+
+          <ul class="footer-links">
+            <li>
+              <h2>Loar Law</h2>
+            </li>
+            <li>The technology law firm</li>
+            <li><a href="/feed.xml">Subscribe with RSS</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="legal-line">
+        <p class="container">
+          &copy; 2026 Loar Law &bull;
+          <a href="/privacy/">Privacy</a>
+          &bull;
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
