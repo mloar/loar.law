@@ -2,26 +2,8 @@
   import '../styles/global.scss'
   const {
   title = 'Loar Law',
-  background_image_path = "/images/MattLoarHeadshots-3-nobg.jpg",
   large_header = false,
-  nav_pages = [
-  { title: 'Home', url: '/' },
-  { title: 'About', url: '/about' },
-  { title: 'Services', url: '/services' },
-  ],
   page = {call_to_action: 'Contact'},
-  footer = [
-  { title: 'Pages', links: [
-  { title: 'Home', url: '/' },
-  { title: 'About', url: '/about' },
-  { title: 'Services', url: '/services' },
-  { title: 'Contact', url: '/contact' },
-  ] },
-  { title: 'Social', links: [
-  { title: 'Bluesky', url: 'https://bsky.app/profile/matt.loar.name' },
-  { title: 'LinkedIn', url: 'https://www.linkedin.com/company/loar-law' },
-  ] },
-  ]
   } = Astro.props;
 ---
 <!doctype html>
@@ -34,14 +16,14 @@
     <title>{Astro.props.frontmatter?.title ?? title}</title>
   </head>
   <body>
-    <header style={"background-image: url('" + background_image_path + "');"} class={large_header ? 'main-hero' : ''}>
+    <header style="background-image: url('/images/MattLoarHeadshots-3-nobg.jpg')" class={large_header ? 'main-hero' : ''}>
       <div class="container">
         <h1><a href="/">Loar Law</a></h1>
         <nav>
           <ul>
-               {nav_pages.map(nav_page =>
-               <li><a class={nav_page.url == page.url ? "active" : ''} href={ nav_page.url }>{ nav_page.title }</a></li>
-                      )}
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -64,27 +46,39 @@
     <footer>
       <div class="container">
         <div class="footer-columns">
-             {footer.map(column =>
-             <ul class="footer-links">
-               <li>
-                 <h2>{ column.title }</h2>
-               </li>
-                 {column.links.map(link =>
-                 <li>
-                   <a target="_blank" href={link.url}>
-                      { link.title }
-                   </a>
-                 </li>
-                      )}
-             </ul>
-                      )}
+          <ul class="footer-links">
+            <li>
+              <h2>Pages</h2>
+            </li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+
+          <ul class="footer-links">
+            <li>
+              <h2>Social</h2>
+            </li>
+            <li><a href="https://bsky.app/profile/matt.loar.name">
+                   <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><g transform="scale(0.0375)"><path d="M439.8 358.7C436.5 358.3 433.1 357.9 429.8 357.4C433.2 357.8 436.5 358.3 439.8 358.7zM320 291.1C293.9 240.4 222.9 145.9 156.9 99.3C93.6 54.6 69.5 62.3 53.6 69.5C35.3 77.8 32 105.9 32 122.4C32 138.9 41.1 258 47 277.9C66.5 343.6 136.1 365.8 200.2 358.6C203.5 358.1 206.8 357.7 210.2 357.2C206.9 357.7 203.6 358.2 200.2 358.6C106.3 372.6 22.9 406.8 132.3 528.5C252.6 653.1 297.1 501.8 320 425.1C342.9 501.8 369.2 647.6 505.6 528.5C608 425.1 533.7 372.5 439.8 358.6C436.5 358.2 433.1 357.8 429.8 357.3C433.2 357.7 436.5 358.2 439.8 358.6C503.9 365.7 573.4 343.5 593 277.9C598.9 258 608 139 608 122.4C608 105.8 604.7 77.7 586.4 69.5C570.6 62.4 546.4 54.6 483.2 99.3C417.1 145.9 346.1 240.4 320 291.1z"></path></g></svg>
+                   Bluesky
+              </a></li>
+              <li><a href="https://www.linkedin.com/company/loar-law">
+                     <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M19,19H16V13.7A1.5,1.5 0 0,0 14.5,12.2A1.5,1.5 0 0,0 13,13.7V19H10V10H13V11.2C13.5,10.36 14.59,9.8 15.5,9.8A3.5,3.5 0 0,1 19,13.3M6.5,8.31C5.5,8.31 4.69,7.5 4.69,6.5A1.81,1.81 0 0,1 6.5,4.69C7.5,4.69 8.31,5.5 8.31,6.5A1.81,1.81 0 0,1 6.5,8.31M8,19H5V10H8M20,2H4C2.89,2 2,2.89 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z"></path></svg>
+                     LinkedIn
+                </a></li>
+          </ul>
 
           <ul class="footer-links">
             <li>
               <h2>Loar Law</h2>
             </li>
             <li>The technology law firm</li>
-            <li><a href="/feed.xml">Subscribe with RSS</a></li>
+            <li><a href="/feed.xml">
+                   <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><circle cx="6.18" cy="17.82" r="2.18"></circle><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"></path></svg>
+                   Subscribe with RSS
+              </a></li>
           </ul>
         </div>
       </div>
